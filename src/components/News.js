@@ -22,7 +22,7 @@ export default function News({ pageSize, country, category, title }) {
       setTotalArticles(res.totalResults);
       setNewsList(res.articles);
     })();
-  }, [page]);
+  }, [page ,category ,country ,pageSize]);
 
   return (
     <div className="container my-3">
